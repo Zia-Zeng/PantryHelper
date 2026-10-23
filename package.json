@@ -1,0 +1,24 @@
+{
+  "name": "inspire-agent-aio-ui",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "rsbuild dev --host 0.0.0.0",
+    "build": "rsbuild build"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.23.1",
+    "framer-motion": "11.1.7",
+    "lucide-react": "0.563.0",
+    "recharts": "2.12.7"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "1.5.17",
+    "@rsbuild/plugin-react": "1.4.1",
+    "@tailwindcss/postcss": "4.1.18",
+    "postcss": "8.5.14",
+    "tailwindcss": "4.1.18"
+  }
+}
