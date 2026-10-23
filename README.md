@@ -8,7 +8,7 @@ English mobile interaction prototype based on the Pantry Helper interaction spec
 - Expiry review with explicit food-safety limits.
 - Explainable shopping quantities, shopping mode and user-confirmed stock-in.
 - Receipt recognition demo with mandatory confirmation and missing-unit validation.
-- Manual pantry entry, search, status filters and amount calibration.
+- Manual pantry entry with optional purchase/best-before dates, search, status filters and amount calibration.
 - Recipe matching, missing-ingredient shopping and actual-use confirmation after cooking.
 - Pantry Plus weekly-plan preview with pantry-deducted shopping gaps.
 

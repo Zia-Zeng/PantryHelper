@@ -1,1 +1,264 @@
-{"flows":[{"id":"pantry-core-loop","title":"Set up, shop, stock in and cook","viewport":{"width":430,"height":932},"steps":[{"action":"capture","id":"welcome","title":"Welcome"},{"action":"click","target":{"role":"button","name":"Get started"},"label":"Get started"},{"action":"capture","id":"preferences","title":"Food preferences"},{"action":"click","target":{"role":"button","name":"Continue"},"label":"Continue"},{"action":"capture","id":"starter","title":"Starter pantry"},{"action":"click","target":{"role":"button","name":"Enter my pantry"},"label":"Enter pantry"},{"action":"capture","id":"today","title":"Today"},{"action":"click","target":{"testId":"tab-shop"},"label":"Open Shop"},{"action":"capture","id":"shop","title":"Sorted shopping list"},{"action":"click","target":{"role":"button","name":"Mark Eggs as bought"},"label":"Mark eggs bought"},{"action":"click","target":{"role":"button","name":"Finish shopping · 1 bought"},"label":"Finish shopping"},{"action":"capture","id":"shop-confirm","title":"Confirm shopping stock-in"},{"action":"click","target":{"role":"button","name":"Confirm & add to pantry"},"label":"Add bought items"},{"action":"click","target":{"testId":"tab-today"},"label":"Return to Today"},{"action":"click","target":{"role":"button","name":"Scan receipt"},"label":"Scan receipt"},{"action":"capture","id":"receipt-upload","title":"Receipt upload"},{"action":"click","target":{"role":"button","name":"Try sample recognition"},"label":"Try sample recognition"},{"action":"capture","id":"receipt-review","title":"Review recognized items"},{"action":"select","target":{"label":"Baby spinach unit"},"value":"bag"},{"action":"click","target":{"role":"button","name":"Confirm & add 3 items"},"label":"Confirm receipt stock-in"},{"action":"click","target":{"testId":"tab-recipes"},"label":"Open Recipes"},{"action":"capture","id":"recipes","title":"Inventory-driven recipes"},{"action":"click","target":{"testId":"recipe-1"},"label":"Open Green Market Bowl"},{"action":"capture","id":"recipe-detail","title":"Recipe detail"},{"action":"click","target":{"role":"button","name":"Start cooking"},"label":"Start cooking"},{"action":"capture","id":"usage","title":"Confirm actual use"},{"action":"fill","target":{"label":"Broccoli used"},"value":"0.5"},{"action":"click","target":{"role":"button","name":"Confirm pantry deduction"},"label":"Confirm pantry deduction"},{"action":"capture","id":"cooked","title":"Pantry updated"},{"action":"click","target":{"role":"button","name":"See updated pantry"},"label":"See pantry"},{"action":"capture","id":"pantry-updated","title":"Updated pantry"}]}]}
+{
+  "flows": [
+    {
+      "id": "pantry-core-loop",
+      "title": "Set up, shop, stock in and cook",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "steps": [
+        {
+          "action": "capture",
+          "id": "welcome",
+          "title": "Welcome"
+        },
+        {
+          "action": "click",
+          "target": {
+            "role": "button",
+            "name": "Get started"
+          },
+          "label": "Get started"
+        },
+        {
+          "action": "capture",
+          "id": "preferences",
+          "title": "Food preferences"
+        },
+        {
+          "action": "click",
+          "target": {
+            "role": "button",
+            "name": "Continue"
+          },
+          "label": "Continue"
+        },
+        {
+          "action": "capture",
+          "id": "starter",
+          "title": "Starter pantry"
+        },
+        {
+          "action": "click",
+          "target": {
+            "role": "button",
+            "name": "Enter my pantry"
+          },
+          "label": "Enter pantry"
+        },
+        {
+          "action": "capture",
+          "id": "today",
+          "title": "Today"
+        },
+        {
+          "action": "click",
+          "target": {
+            "testId": "tab-shop"
+          },
+          "label": "Open Shop"
+        },
+        {
+          "action": "capture",
+          "id": "shop",
+          "title": "Sorted shopping list"
+        },
+        {
+          "action": "click",
+          "target": {
+            "role": "button",
+            "name": "Mark Eggs as bought"
+          },
+          "label": "Mark eggs bought"
+        },
+        {
+          "action": "click",
+          "target": {
+            "role": "button",
+            "name": "Finish shopping · 1 bought"
+          },
+          "label": "Finish shopping"
+        },
+        {
+          "action": "capture",
+          "id": "shop-confirm",
+          "title": "Confirm shopping stock-in"
+        },
+        {
+          "action": "click",
+          "target": {
+            "role": "button",
+            "name": "Confirm & add to pantry"
+          },
+          "label": "Add bought items"
+        },
+        {
+          "action": "click",
+          "target": {
+            "testId": "tab-today"
+          },
+          "label": "Return to Today"
+        },
+        {
+          "action": "click",
+          "target": {
+            "role": "button",
+            "name": "Scan receipt"
+          },
+          "label": "Scan receipt"
+        },
+        {
+          "action": "capture",
+          "id": "receipt-upload",
+          "title": "Receipt upload"
+        },
+        {
+          "action": "click",
+          "target": {
+            "role": "button",
+            "name": "Try sample recognition"
+          },
+          "label": "Try sample recognition"
+        },
+        {
+          "action": "capture",
+          "id": "receipt-review",
+          "title": "Review recognized items"
+        },
+        {
+          "action": "select",
+          "target": {
+            "label": "Baby spinach unit"
+          },
+          "value": "bag"
+        },
+        {
+          "action": "click",
+          "target": {
+            "role": "button",
+            "name": "Confirm & add 3 items"
+          },
+          "label": "Confirm receipt stock-in"
+        },
+        {
+          "action": "click",
+          "target": {
+            "testId": "tab-recipes"
+          },
+          "label": "Open Recipes"
+        },
+        {
+          "action": "capture",
+          "id": "recipes",
+          "title": "Inventory-driven recipes"
+        },
+        {
+          "action": "click",
+          "target": {
+            "testId": "recipe-1"
+          },
+          "label": "Open Green Market Bowl"
+        },
+        {
+          "action": "capture",
+          "id": "recipe-detail",
+          "title": "Recipe detail"
+        },
+        {
+          "action": "click",
+          "target": {
+            "role": "button",
+            "name": "Start cooking"
+          },
+          "label": "Start cooking"
+        },
+        {
+          "action": "capture",
+          "id": "usage",
+          "title": "Confirm actual use"
+        },
+        {
+          "action": "fill",
+          "target": {
+            "label": "Broccoli used"
+          },
+          "value": "0.5"
+        },
+        {
+          "action": "click",
+          "target": {
+            "role": "button",
+            "name": "Confirm pantry deduction"
+          },
+          "label": "Confirm pantry deduction"
+        },
+        {
+          "action": "capture",
+          "id": "cooked",
+          "title": "Pantry updated"
+        },
+        {
+          "action": "click",
+          "target": {
+            "role": "button",
+            "name": "See updated pantry"
+          },
+          "label": "See pantry"
+        },
+        {
+          "action": "capture",
+          "id": "pantry-updated",
+          "title": "Updated pantry"
+        },
+        {
+          "action": "click",
+          "target": {
+            "role": "button",
+            "name": "Add food"
+          },
+          "label": "Add food"
+        },
+        {
+          "action": "capture",
+          "id": "add-food-dates",
+          "title": "Optional freshness dates"
+        },
+        {
+          "action": "fill",
+          "target": {
+            "label": "Food name"
+          },
+          "value": "Strawberries"
+        },
+        {
+          "action": "fill",
+          "target": {
+            "label": "Purchased on"
+          },
+          "value": "2030-10-20"
+        },
+        {
+          "action": "fill",
+          "target": {
+            "label": "Best before / use by"
+          },
+          "value": "2030-10-25"
+        },
+        {
+          "action": "click",
+          "target": {
+            "role": "button",
+            "name": "Add to pantry"
+          },
+          "label": "Save food"
+        },
+        {
+          "action": "capture",
+          "id": "food-with-expiry",
+          "title": "Food added with freshness reminder"
+        }
+      ]
+    }
+  ]
+}
