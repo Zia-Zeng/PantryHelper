@@ -67,7 +67,10 @@
   }
 
   body {
-    background: radial-gradient(ellipse at 50% 38%, #ffffff 0%, #f1efe9 60%, #e7e5de 100%);
+    background:
+      radial-gradient(ellipse at 18% 48%, #e3eadf 0%, transparent 30%),
+      radial-gradient(ellipse at 84% 24%, #efe3d3 0%, transparent 29%),
+      linear-gradient(135deg, #f7f5ef 0%, #eeece4 52%, #e7e5dc 100%);
   }
 
   #root {
@@ -82,13 +85,13 @@
     height: min(894px, calc(100dvh - 40px));
     min-height: 680px;
     max-width: none;
-    border: 10px solid #171715;
-    border-radius: 54px;
+    border: 8px solid #292824;
+    border-radius: 52px;
     box-shadow:
-      0 0 0 1px #c4bfb5,
-      0 0 0 3px #747168,
-      0 28px 80px #28251f30,
-      inset 0 0 0 1px #484844;
+      0 0 0 1px #faf9f5,
+      0 0 0 2px #aaa497,
+      0 24px 64px #403a2a2b,
+      inset 0 0 0 1px #716e64;
     transform: translateZ(0);
   }
 
@@ -162,5 +165,57 @@
   .phone-app {
     height: calc(100dvh - 32px);
     min-height: 650px;
+  }
+}
+@media (min-width: 1180px) {
+  #root {
+    box-sizing: border-box;
+    width: min(1320px, calc(100vw - 96px));
+    min-height: 100dvh;
+    margin-inline: auto;
+    padding: clamp(20px, 4vh, 48px) 0;
+    grid-template-columns: minmax(0, 1fr) 422px minmax(0, 1fr);
+    column-gap: clamp(44px, 6vw, 112px);
+    align-content: center;
+    position: relative;
+  }
+
+  #root::before,
+  #root::after {
+    grid-row: 1;
+    box-sizing: border-box;
+    width: min(100%, 280px);
+  }
+
+  #root::before {
+    grid-column: 1;
+    justify-self: end;
+    content: "PANTRY HELPER\A\A A calmer kitchen,\A one less thing to remember.";
+    white-space: pre-line;
+    color: #293b30;
+    font: 500 clamp(25px, 2.2vw, 34px)/1.18 Georgia, "Times New Roman", serif;
+    letter-spacing: -0.045em;
+  }
+
+  #root::after {
+    grid-column: 3;
+    justify-self: start;
+    padding: 25px 24px;
+    border: 1px solid #d8d2c6;
+    border-radius: 22px;
+    background: #fffdf8b8;
+    box-shadow: 0 18px 45px #5147330d;
+    content: "MADE FOR EVERYDAY\A\A Freshness reminders\A Smart shopping lists\A Recipes from what you have\A\A LESS WASTE. MORE GOOD MEALS.";
+    white-space: pre-line;
+    color: #736f66;
+    font: 500 13px/2.05 Inter, ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: 0.005em;
+  }
+
+  .phone-app {
+    grid-column: 2;
+    grid-row: 1;
+    height: min(894px, calc(100dvh - 80px));
+    border-width: 8px;
   }
 }
