@@ -49,6 +49,7 @@ export default defineConfig({
     rspack(config) {
       config.output = {
         ...config.output,
+        publicPath: './',
         asyncChunks: false,
       };
     },
