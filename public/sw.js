@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pantry-helper-v1';
+const CACHE_NAME = 'pantry-helper-v2';
 const APP_SHELL = [
   './',
   './preview.js',

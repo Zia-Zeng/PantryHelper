@@ -1,6 +1,6 @@
-# Pantry Helper Mobile · iPhone 15 Pro Max
+# Pantry Helper Mobile · iPhone 16 Pro
 
-English mobile interaction prototype based on the Pantry Helper interaction specification. Target viewport: **430 × 932**.
+English mobile interaction prototype based on the Pantry Helper interaction specification. Target viewport: **402 × 874**.
 
 ## Experience
 - First-time setup for goals, people, allergies and starter foods.
@@ -15,7 +15,7 @@ English mobile interaction prototype based on the Pantry Helper interaction spec
 ## Web app
 - Live installable PWA: https://zia-zeng.github.io/PantryHelper/
 - Install it from Chrome or Edge, or use Safari's Share → Add to Home Screen on iPhone.
-- Desktop browsers keep the iPhone-style frame around the 430 × 932 experience; mobile devices use the full screen.
+- Desktop browsers keep the iPhone-style frame around the 402 × 874 experience; mobile devices use the full screen.
 - The app shell is cached for offline reopening after the first successful visit. Pantry data stays local to each browser.
 
 ## Prototype boundaries
