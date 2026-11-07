@@ -49,6 +49,9 @@ class RuntimeErrorBoundary extends React.Component<
 
 const RuntimeApp = () => {
   useEffect(() => {
+    if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
+      void navigator.serviceWorker.register('./sw.js').catch(() => undefined);
+    }
     let cancelled = false;
     void waitForVisualReady().then(() => {
       if (!cancelled) {

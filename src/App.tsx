@@ -5,6 +5,7 @@ import {HomeIndicator} from './components/mobile-shell/home-indicator';
 import salad from './assets/salad.jpg';import bowl from './assets/bowl.jpg';import pasta from './assets/pasta.jpg';
 import avocado from './assets/avocado.jpg';import tomatoes from './assets/tomatoes.jpg';import eggs from './assets/eggs.jpg';import milk from './assets/milk.jpg';import broccoli from './assets/broccoli.jpg';import salmon from './assets/salmon.jpg';
 import './mobile.css';
+import './device-frame.css';
 
 type Item={id:number;name:string;image:string;qty:number;unit:string;location:string;days:number;state:'fresh'|'expiring'|'low'|'pending';purchasedOn?:string;bestBefore?:string};
 type Buy={id:number;name:string;image:string;qty:number;unit:string;category:string;checked:boolean;source:string};

@@ -1,0 +1,67 @@
+/* Keep the mobile-first app inside a recognizable iPhone-style device on desktop. */
+@media (min-width: 601px) {
+  html,
+  body,
+  #root {
+    height: auto;
+    min-height: 100%;
+  }
+
+  body {
+    background: radial-gradient(ellipse at 50% 38%, #ffffff 0%, #f1efe9 60%, #e7e5de 100%);
+  }
+
+  #root {
+    display: grid;
+    min-height: 100dvh;
+    place-items: center;
+    padding: 20px 0;
+  }
+
+  .phone-app {
+    width: min(450px, calc(100vw - 48px));
+    height: min(952px, calc(100dvh - 40px));
+    min-height: 680px;
+    max-width: none;
+    border: 10px solid #171715;
+    border-radius: 58px;
+    box-shadow:
+      0 0 0 1px #ffffffb0,
+      0 28px 80px #28251f30,
+      inset 0 0 0 1px #484844;
+    transform: translateZ(0);
+  }
+
+  .phone-app::before {
+    position: absolute;
+    z-index: 70;
+    top: 9px;
+    left: 50%;
+    width: 112px;
+    height: 28px;
+    border-radius: 18px;
+    background: #080808;
+    content: "";
+    pointer-events: none;
+    transform: translateX(-50%);
+  }
+
+  .phone-app > .screen {
+    height: calc(100% - 178px);
+  }
+
+  .phone-app.onboarding .onboard-body {
+    height: calc(100% - 260px);
+  }
+}
+
+@media (min-width: 601px) and (max-height: 760px) {
+  #root {
+    padding: 16px 0;
+  }
+
+  .phone-app {
+    height: calc(100dvh - 32px);
+    min-height: 650px;
+  }
+}

@@ -12,6 +12,12 @@ English mobile interaction prototype based on the Pantry Helper interaction spec
 - Recipe matching, missing-ingredient shopping and actual-use confirmation after cooking.
 - Pantry Plus weekly-plan preview with pantry-deducted shopping gaps.
 
+## Web app
+- Live installable PWA: https://zia-zeng.github.io/PantryHelper/
+- Install it from Chrome or Edge, or use Safari's Share → Add to Home Screen on iPhone.
+- Desktop browsers keep the iPhone-style frame around the 430 × 932 experience; mobile devices use the full screen.
+- The app shell is cached for offline reopening after the first successful visit. Pantry data stays local to each browser.
+
 ## Prototype boundaries
 - All data is local to the browser. There is no server, user account, real sharing or notification service.
 - Receipt recognition uses clearly labelled sample results. Uploaded images are not sent to OCR or AI.
